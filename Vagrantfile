@@ -5,7 +5,7 @@ Vagrant.configure(2) do |config|
     		devbox.vm.hostname = "devops-box"
       	devbox.vm.provision "shell", path: "scripts/install.sh"
     		devbox.vm.provider "virtualbox" do |v|
-    		  v.memory = 4096
+    		  v.memory = 8192
     		  v.cpus = 2
     		end
 	end
